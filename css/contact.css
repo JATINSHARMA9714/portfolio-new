@@ -1,0 +1,114 @@
+@font-face {
+    font-family: roman;
+    src: url("../fonts/60e1a407cfd884bbba461245_GrandSlang\ Roman.ttf");
+}
+@font-face {
+    font-family: monserrat;
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    color: #1A1818;
+    background-color: #fff;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    background-color: #ECE7E1;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-color: #1A1818;
+    padding: 4vw;
+}
+#left-socials{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    font-family: monserrat;
+    width: 5vh;
+    height: 100vh;
+    padding: 4.5vw 2.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #1A1818;
+    font-weight: 700;
+    font-size: 1.6vh;
+    /* background-color: orangered;    */
+}
+#left-socials #bottom-part{
+    transform: rotate(-90deg);
+    text-wrap: nowrap;
+    padding: 1vw;
+    color: #ECE7E1;
+}
+#left-socials #top-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2vw;
+}
+#left-socials #top-part > *{
+    transform: rotate(-90deg);
+    text-decoration: none;
+    color: #ECE7E1;
+    letter-spacing: 4px;
+}
+#left-socials #top-part a:hover{
+    text-decoration:line-through;
+}
+#info{
+    color: #ECE7E1;
+    width: 100%;
+    height: 70%;
+    margin-top: 8%;
+    /* border:2px solid red; */
+    padding:  0 12vw;
+}
+#info h1{
+    font-family: roman;
+    font-size: 14vw;
+    height: fit-content;
+    font-weight: 500;
+    /* border: 2px solid red; */
+}
+
+#info p{
+    color: #DCD8D2;
+    font-family: monserrat;
+    font-size: 0.9vw;
+    width: 35%;
+    font-weight:500;
+    line-height: 1.5vw;
+}
+#info a{
+    font-weight: 500;
+    font-size: 0.9vw;
+    border-bottom: 1.5px solid #DCD8D2;
+    color: #DCD8D2;
+    text-decoration: none;
+}
+#info a:hover{
+    text-decoration: line-through;
+    border-bottom: none;
+}
+.para{
+    padding-bottom: 1.5vw;
+}
+.container{
+    overflow: hidden;
+    margin: 1.3vw 0;
+    /* border: 2px solid red; */
+}
