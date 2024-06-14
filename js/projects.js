@@ -54,8 +54,8 @@ projects.forEach((project,index) => {
       scrollTrigger:{
         trigger:project,
         scroller:"#main",
-        start:"top 80%",
-        end:"top 20%",
+        start:"top 90%",
+        end:"top 80%",
         scrub:2
       }
     })

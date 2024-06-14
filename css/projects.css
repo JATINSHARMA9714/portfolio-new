@@ -18,6 +18,7 @@
 html,body{
     width: 100%;
     height: 100%;
+    background-color: #ECE7E1;
 }
 #left-socials{
     position: fixed;
@@ -277,3 +278,153 @@ box-shadow:  33px 33px 65px #bebebe,
     transition-duration: 0.3s;
   }
   
+
+  @media (max-width: 700px) {
+    #left-socials{
+        position: relative;
+        background-color: #ECE7E1;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        font-family: monserrat;
+        width: 100vw;
+        height: 5vh;
+        padding: 6.5vw 7.5vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color: #1A1818;
+        font-weight: 700;
+        font-size: 1.6vh;
+        /* background-color: orangered;    */
+    }
+    #left-socials #bottom-part{
+        transform: rotate(0deg);
+        text-wrap: nowrap;
+        padding: 1vw;
+    }
+    #left-socials #top-part{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 2vw;
+    }
+    #left-socials #top-part > *{
+        transform: rotate(0deg);
+        text-decoration: none;
+        color: #1A1818;
+        letter-spacing: 4px;
+    }
+    .projects{
+        width: 100%;
+        margin-top: 20%;
+        /* border: 2px solid red; */
+    }
+    .project:nth-child(2n){
+        flex-direction: row-reverse;
+    }
+    .project{
+        font-family: roman;
+        width: 100%;
+        height: fit-content;
+        /* border: 2px solid blue; */
+        padding: 1vw;
+        margin-bottom: 5vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .project .left-part{
+        height:30%;
+        width: 100%;
+        padding: 1.7vw;
+        overflow: hidden;
+        /* border: 2px solid red; */
+        /* border-radius: 10pc */
+        border-radius: 1.5vw;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  33px 33px 65px #bebebe,
+                 -33px -33px 65px #ffffff;
+    }
+    .left-part .image{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        /* border: 2px solid red; */
+        border-radius: 1vw;
+        overflow: hidden;
+    }
+    
+    .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: scale 0.5s;
+    }
+    .image img:hover{
+        scale: 1.1;
+    }
+    .project .right-part{
+        height: 70%;
+        width: 100%;
+        /* border: 2px solid red; */
+        padding: 4vw 2vw;
+        border-radius: 10px;
+    }
+    .right-part h1{
+        padding: 3px;
+        font-size: 10.6vw;
+        width: fit-content;
+        letter-spacing: 2px;
+        border-bottom: 2px solid black;
+    }
+    .right-part ul{
+        margin-top: 3vw;
+        margin-left: 1vw;
+    }
+    .right-part ul li{
+        font-family: monserrat;
+        color: #1c1a1a;
+        font-weight: 600;
+        padding: 0.4vw;
+        font-size: 3.2vw;
+    }
+    .right-part h2{
+        margin: 4vw 0 0 0;
+        width: fit-content;
+        border-bottom: 2px solid #1A1818;
+    }
+    .right-part .images{
+        width: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -6%;
+    }
+    .right-part .images .image{
+        width: 30%;
+        height: 10vh;
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .right-part .image img{
+        width: 70%;
+        height: 70%;
+        object-fit: contain;
+    }
+    #gsap{
+        scale: 2.5;
+    }
+    #chess{
+        background-color: #1A1818;
+    }
+    #chessImage{
+        object-fit: contain;
+    }
+  }

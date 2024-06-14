@@ -167,3 +167,101 @@ html,body{
     backdrop-filter:blur(40px);
     background-color:transparent;
 }
+
+@media (max-width: 600px) {
+    #page1{
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        background-color: #ECE7E1;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #left-socials{
+        font-family: monserrat;
+        width: 100vw;
+        height: 5vh;
+        flex-direction: row;
+        padding: 8.5vw 7.5vw;
+        /* border: 2px solid red; */
+        /* background-color: orangered;    */
+    }
+    #left-socials #bottom-part{
+        transform: rotate(0deg);
+    }
+    #left-socials #top-part{
+        flex-direction: row;
+    }
+    #left-socials #top-part > *{
+        transform: rotate(0deg);
+    }
+    #intro{
+        font-family: monserrat;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: fit-content;
+        width: 100vw;
+        /* background-color: orangered; */
+        padding: 8vw 6vw;
+    }
+    #intro #text{
+        overflow: hidden;
+    }
+    #intro #text h1{
+        font-family: monserrat;
+        font-size: 2.5vh;
+        font-weight: 700;
+        letter-spacing: 3px;
+        /* margin-bottom: 10px; */
+    }
+    #intro #text h2{
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        font-size: 1.8vh;
+        margin-top: 18px;
+        font-weight: 500;
+        margin-bottom: 2px;
+    }
+    #intro #text #college{
+        height: 3vh;
+    }
+    #navigations{
+        padding: 5vw;
+        height: 80vh;
+        width: 100%;
+        /* border: 2px solid red; */
+        position: relative;
+        /* background-color: orange; */
+    }
+    #navigations .items{
+        width: 100%;
+        height: 15%;
+        /* border:2px solid red; */
+        overflow: hidden;
+    }
+    .item{
+        width: 100%;
+        /* border: 2px solid red; */
+        /* overflow: hidden; */
+        height: 100%;
+    }
+    #navigations div a{
+        font-size: 16vw;
+    }
+    #transparent-layer{
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter:blur(40px);
+        background-color:transparent;
+    }
+    
+}
